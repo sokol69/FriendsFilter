@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>DrugoFiltr</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.10/handlebars.js"></script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<div id="header">
+			<div id="head__title" class="cf">
+				<p class="head__title_text"><b>Выберите друзей</b></p>
+				<button id="button__delete_all"><b>Очистить список</b></button>
+			</div>
+			<div id="head__input" class="cf">
+				<div id="input__head_left" class="input_wrap">
+					<input type="text" name="nameL" id="name_left" class="inputs" placeholder="Начните вводить имя друга">
+				</div>
+				<div id="input__head_right" class="input_wrap">
+					<input type="text" name="nameR" id="name_right" class="inputs" placeholder="Начните вводить имя друга">
+				</div>
+			</div>
+		</div>
+		<div id="container" class="cf">
+			<div id="container__left">
+				<div id="container__left_head">
+					<p class="container__head_text"><b>Ваши друзья</b></p>
+				</div>
+				<div id="container__left_content">
+					<div id="my_friends"></div>
+				</div>
+			</div>
+			<div id="container__right">
+				<div id="container__right_head">
+					<p class="container__head_text"><b>Друзья в списке</b></p>
+				</div>
+				<div id="container__right_content">
+					<div id="friends_list"></div>
+				</div>
+			</div>
+		</div>
+		<div id="footer" class="cf">
+			<button id="button__save"><b>Сохранить</b></button>
+		</div>
+	</div>
+<script id="user-template" type="text/x-handlebars-template" class="cf">
+	{{#each list}}
+	<div class="mf_wrap">
+		<div class="drag">
+			<img src="{{photo_50}}" class="photos"/>
+			<div class="my_friend__name">{{first_name}} {{last_name}}</div>
+		</div>
+		<button class="add">+</button>
+	</div>
+	{{/each}}
+</script>
+<script src="main.js"></script>
+</body>
+</html>

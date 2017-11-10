@@ -1,0 +1,217 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
+body{
+	background: #ADA098;
+	font-family: Ubuntu, sans-serif;
+}
+
+div ul{
+	margin: 0;
+	padding: 0;
+}
+
+ul li{
+	list-style: none;
+}
+
+p{
+	padding-left: 0 0 0 10px;
+	margin: 0;
+}
+
+#wrapper{
+	background: #f6f6f6;
+	border-radius: 10px;
+	margin: 20px auto;
+	width: 70%;
+	height: 70%;
+}
+
+/*-----------HEADER------------*/
+
+#header{
+	height: 100px;
+}
+
+#head__title{
+	height: 50%;
+	background: #FF804F;
+	border-radius: 10px 10px 0 0;
+
+}
+
+#button__delete_all{
+	float: right;
+	border-radius: 10px;
+	margin: 10px 10px 0 0;
+	background: #FF804F;
+	height: 30px;
+	width: 150px;
+	color: white;
+}
+
+.head__title_text{
+	padding: 10px;
+	color: white;
+	width: 50%;
+	float: left;
+}
+
+#head__input{
+	background: #F0F0F0;
+	height: 50%;
+}
+
+#input__head_left{
+	float: left;
+	width: 40%;
+}
+
+#input__head_right{
+	float: right;
+	width: 40%;
+}
+
+.input_wrap{
+	box-sizing: border-box;
+	padding: 10px;
+	height: 100%;
+	width: 40%;
+	text-align: center;
+}
+
+.inputs{
+	padding: 10px;
+	border-radius: 10px;
+	height: 20%;
+	width: 90%;
+}
+
+/*-----------CONTAINER------------*/
+#container{
+	height: calc(100% - 150px);
+}
+
+#container__left{
+	float: left;
+	height: 100%;
+	width: 50%;
+}
+
+#container__right{
+	float: right;
+	height: 100%;
+	width: 50%;
+}
+
+#container__left_head{
+	height: 10%;
+}
+
+#container__left_content{
+	height: 90%;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+
+#container__right_head{
+	height: 10%;
+}
+
+#container__right_content{
+	width: 100%;
+	height: 90%;
+	box-sizing: border-box;
+	overflow-y: scroll;
+}
+
+#friends_list{
+	width: 100%;
+	height: 100%;
+}
+
+.container__head_text{
+	padding: 10px;
+}
+
+.list__item{
+	padding: 10px;
+	margin: 10px;
+}
+
+.list__item_button{
+	float: right;
+}
+
+.photos{
+	display: inline-block;
+	border-radius: 50px;
+	margin: 10px;
+}
+
+.add{
+	font-size: 25px;
+	font-weight: bold;
+	float: right;
+	margin: auto;
+	border-radius: 50px;
+	background: #F6F6F6;
+	border: 0;
+	color: gray;
+}
+
+.my_friend__name{
+	display: inline-block;
+	margin: auto;
+	width: 190px;
+}
+
+.mf_wrap{
+	vertical-align: middle;
+	display: flex;
+}
+
+.drag{
+	vertical-align: middle;
+	display: flex;
+}
+
+.drag.over {
+	border: 2px dashed #000;
+  }
+
+
+/*-----------FOOTER------------*/
+
+#footer{
+	height: 50px;
+	background: #F0F0F0;
+	border-radius: 0 0 10px 10px;
+}
+
+#button__save{
+	float: right;
+	height: 30px;
+	width: 90px;
+	margin: 10px;
+	border-radius: 10px;
+	background-color: #FA7D4D;
+	color: white;
+}
+
+/*-----------ClearFix------------*/
+.cf::after,
+.cf::before,
+.wrapper::after,
+.wrapper::before{
+	content: "";
+	display: table;
+}
+
+.cf::after,
+.wrapper::after{
+	clear: both;
+}
